@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+</head>
+<body>
+    <h1>Student Records</h1>
+    <h2>Add Student</h2>
+    <form id="studentForm">
+        <label>Name:</label><br>
+        <input type="text" id="name" required><br><br>
+        <label>Class:</label><br>
+        <input type="text" id="class" required><br><br>
+        <label>Average:</label><br>
+        <input type="number" id="average" required><br><br>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Search Student</h2>
+    <form id="searchForm">
+        <label>Enter Name:</label><br>
+        <input type="text" id="searchName" required><br><br>
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>Student List</h2>
+    <ul id="studentList"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
