@@ -99,7 +99,12 @@
 </head>
 <body>
     <h1>Student Records</h1>
-    <h2>Add Student</h2>
+    <h2>Welcome {{ username }} (Role: {{ role }})</h2>
+<a href="/logout">Logout</a>
+{% if role == 'teacher' %}
+<!-- Form for teacher only -->
+<form method="post" action="/add_student">
+   <h2>Add Student</h2>
     <form id="studentForm">
         <label>Name:</label><br>
         <input type="text" id="name" required><br><br>
@@ -108,7 +113,11 @@
         <label>Average:</label><br>
         <input type="number" id="average" required><br><br>
         <button type="submit">Add Student</button>
-    </form>
+    </form>    
+</form>
+{% endif %}
+
+ 
 
     <h2>Search Student</h2>
     <form id="searchForm">
